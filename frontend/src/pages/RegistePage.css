@@ -1,0 +1,187 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  direction: rtl;
+}
+
+.register-box {
+  background: white;
+  padding: 40px;
+  border-radius: 32px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #e3dede;
+}
+
+.register-box h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #13314c;
+  text-align: center;
+}
+
+.register-box .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.register-box input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  border: 1px solid #c0c8cc;
+  border-radius: 16px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.register-box input:focus {
+  outline: none;
+  border-color: #1c7385;
+}
+
+.register-box button {
+  width: 100%;
+  padding: 14px;
+  background: #1c7385;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+
+.register-box button:hover {
+  background: #0f5a6b;
+}
+
+.error {
+  color: #a70023;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #7c8788;
+}
+
+.login-link a {
+  color: #1c7385;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.role-selector {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+}
+.role-selector label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+/* دکمه‌های فیلتر */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.filter-btn {
+  background: #f4f2f0;
+  border: 1px solid #e3dede;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #4a5c64;
+}
+
+.filter-btn:hover {
+  background: #e3dede;
+}
+
+.filter-btn.active {
+  background: #1c7385;
+  color: white;
+  border-color: #1c7385;
+}
+
+.product-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.product-badge {
+  background: #f4f2f0;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  color: #4a5c64;
+}
+
+.results-info {
+  margin-bottom: 15px;
+  color: #7c8788;
+  font-size: 14px;
+}
+
+.product-code {
+  font-size: 11px;
+  color: #999;
+  margin: 5px 0;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.clear-filters-btn {
+  background: none;
+  border: none;
+  color: #1c7385;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+  color: #a70023;
+}
+
+.no-products {
+  text-align: center;
+  padding: 50px;
+  background: #f9f5f0;
+  border-radius: 16px;
+}
+
+.no-products .reset-filter-btn {
+  margin-top: 15px;
+  background: #1c7385;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
