@@ -1,0 +1,100 @@
+.about-page {
+  direction: rtl;
+  font-family: 'Vazir', sans-serif;
+  background: #f4f2f0;
+  padding: 50px 0;
+  min-height: 70vh;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== بخش بالایی (بدون باکس) ========== */
+.about-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.about-hero-image {
+  flex: 0 0 42%;                 /* عرض کمتر برای عکس */
+  margin-right: -30px;           /* نزدیک‌تر شدن به لبهٔ راست */
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffd800;
+}
+
+.about-hero-text {
+  flex: 1;
+  padding-top: 30px;
+}
+
+.about-hero-text h1 {
+  font-size: 36px;
+  color: #13314c;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #ffd800;
+  display: inline-block;
+}
+
+.about-hero-text p {
+  font-size: 18px;
+  line-height: 2.2;              /* خطوط بلندتر */
+  color: #1e2a36;
+  margin-bottom: 28px;
+  text-align: justify;
+  max-width: 95%;                /* جلوگیری از چسبیدن به لبهٔ چپ */
+}
+
+/* ========== ریسپانسیو ========== */
+@media (max-width: 900px) {
+  .about-hero {
+    gap: 30px;
+  }
+
+  .about-hero-image {
+    margin-right: -10px;
+  }
+
+  .about-hero-text h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+  }
+
+  .about-hero-image {
+    margin-right: 0;
+    flex: auto;
+    width: 100%;
+  }
+
+  .about-hero-text {
+    padding-top: 0;
+  }
+
+  .about-hero-text h1 {
+    font-size: 28px;
+  }
+
+  .about-hero-text p {
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 100%;
+  }
+}
