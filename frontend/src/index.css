@@ -1,0 +1,28 @@
+/* ========== Vazir Font ========== */
+@font-face {
+  font-family: 'Vazir';
+  src: url('/fonts/Vazir/Vazir-Regular.woff2') format('woff2'),
+       url('/fonts/Vazir/Vazir-Regular.woff') format('woff'),
+       url('/fonts/Vazir/Vazir-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/fonts/Vazir/Vazir-Bold.woff2') format('woff2'),
+       url('/fonts/Vazir/Vazir-Bold.woff') format('woff'),
+       url('/fonts/Vazir/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========== اعمال فونت در کل پروژه ========== */
+* {
+  font-family: 'Segoe UI', 'Tahoma', 'Vazir', sans-serif;
+}
+body {
+  font-family: 'Segoe UI', 'Tahoma', 'Vazir', sans-serif;
+}
