@@ -1,0 +1,55 @@
+/* frontend/src/components/common/Pagination.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.pagination-prev,
+.pagination-next,
+.pagination-number {
+  background: white;
+  border: 1px solid #e3dede;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Vazir', sans-serif;
+  transition: all 0.3s;
+  color: #13314c;
+}
+
+.pagination-prev:hover:not(:disabled),
+.pagination-next:hover:not(:disabled),
+.pagination-number:hover:not(.dots):not(.active) {
+  background: #1c7385;
+  color: white;
+  border-color: #1c7385;
+}
+
+.pagination-number.active {
+  background: #1c7385;
+  color: white;
+  border-color: #1c7385;
+}
+
+.pagination-number.dots {
+  cursor: default;
+  border: none;
+  background: none;
+}
+
+.pagination-prev:disabled,
+.pagination-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
