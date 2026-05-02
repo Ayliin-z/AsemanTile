@@ -1,0 +1,149 @@
+.customer-layout {
+  display: flex;
+  min-height: 80vh;
+  direction: rtl;
+  max-width: 1300px;
+  margin: 30px auto;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.customer-sidebar {
+  width: 280px;
+  background: #13314c;
+  color: #e3dede;
+  border-radius: 28px;
+  padding: 25px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
+.customer-profile {
+  padding: 0 20px 25px;
+  border-bottom: 1px solid #1c7385;
+  text-align: center;
+}
+
+.avatar {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.customer-profile h3 {
+  margin: 0 0 5px;
+  color: #ffd800;
+}
+
+.customer-profile p {
+  margin: 0;
+  font-size: 14px;
+  color: #18b8c1;
+}
+
+.customer-nav {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.customer-nav button {
+  background: none;
+  border: none;
+  color: #c0d0d8;
+  font-size: 16px;
+  padding: 12px 18px;
+  text-align: right;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: all 0.2s;
+}
+
+.customer-nav button:hover {
+  background: #1c7385;
+  color: #fff;
+}
+
+.customer-nav button.active {
+  background: #ffd800;
+  color: #13314c;
+  font-weight: bold;
+}
+
+.customer-nav .logout-btn {
+  margin-top: 20px;
+  background: #a70023;
+  color: white;
+}
+
+.customer-main {
+  flex: 1;
+}
+
+.customer-header {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 24px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+}
+
+.customer-header h1 {
+  margin: 0;
+  color: #13314c;
+}
+
+.customer-content {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+}
+
+.welcome-card h2 {
+  color: #13314c;
+  margin-top: 0;
+}
+
+.quick-links {
+  margin-top: 30px;
+}
+
+.quick-link {
+  display: inline-block;
+  background: #1c7385;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.placeholder-content {
+  text-align: center;
+  padding: 40px;
+  color: #7c8788;
+}
+
+.account-details .detail-row {
+  padding: 12px 0;
+  border-bottom: 1px solid #e3dede;
+}
+
+.account-details .detail-row span {
+  font-weight: bold;
+  color: #13314c;
+  width: 120px;
+  display: inline-block;
+}
+
+.btn-secondary {
+  margin-top: 25px;
+  background: #e3dede;
+  border: 1px solid #7c8788;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
