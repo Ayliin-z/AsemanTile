@@ -1,0 +1,135 @@
+/* frontend/src/components/ui/FilterSidebar.css */
+.filter-sidebar {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #e3dede;
+  position: sticky;
+  top: 90px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ffd800;
+}
+
+.filter-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #13314c;
+}
+
+.filter-reset {
+  background: none;
+  border: none;
+  color: #1c7385;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Vazir', sans-serif;
+}
+
+.filter-reset:hover {
+  text-decoration: underline;
+}
+
+.filter-group {
+  margin-bottom: 24px;
+}
+
+.filter-group > label {
+  display: block;
+  font-weight: bold;
+  color: #13314c;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #4a5c64;
+}
+
+.filter-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #1c7385;
+  cursor: pointer;
+}
+
+.filter-checkbox span {
+  flex: 1;
+}
+
+/* دکمه‌های فیلتر (برای سایز) */
+.filter-buttons {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: #f4f2f0;
+  border: 1px solid #e3dede;
+  padding: 6px 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s;
+  font-family: 'Vazir', sans-serif;
+}
+
+.filter-btn.active {
+  background: #1c7385;
+  color: white;
+  border-color: #1c7385;
+}
+
+.filter-btn:hover:not(.active) {
+  background: #e3dede;
+}
+
+/* محدوده قیمت */
+.price-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e3dede;
+  border-radius: 12px;
+  font-size: 13px;
+  font-family: 'Vazir', sans-serif;
+}
+
+.price-input:focus {
+  outline: none;
+  border-color: #1c7385;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .filter-sidebar {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
