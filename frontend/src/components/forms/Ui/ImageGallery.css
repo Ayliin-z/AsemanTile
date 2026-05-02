@@ -1,0 +1,138 @@
+/* frontend/src/components/ui/ImageGallery.css */
+.image-gallery {
+  display: flex;
+  gap: 16px;
+}
+
+/* حالت تصاویر کوچک در پایین */
+.gallery-bottom {
+  flex-direction: column;
+}
+
+.gallery-bottom .gallery-thumbnails {
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* حالت تصاویر کوچک در راست */
+.gallery-right {
+  flex-direction: row-reverse;
+}
+
+.gallery-right .gallery-thumbnails {
+  flex-direction: column;
+}
+
+/* تصویر اصلی */
+.gallery-main {
+  position: relative;
+  flex: 1;
+  background: #f4f2f0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.gallery-main.zoomed img {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+.zoom-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-main:hover .zoom-icon {
+  opacity: 1;
+}
+
+/* تصاویر کوچک */
+.gallery-thumbnails {
+  display: flex;
+  gap: 12px;
+  width: 100px;
+}
+
+.gallery-bottom .gallery-thumbnails {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  background: #f4f2f0;
+}
+
+.gallery-bottom .thumbnail {
+  width: 80px;
+  height: 80px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail.active {
+  border-color: #1c7385;
+  box-shadow: 0 0 0 2px rgba(28, 115, 133, 0.2);
+}
+
+.thumbnail:hover:not(.active) {
+  border-color: #c0c8cc;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .gallery-thumbnails {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .gallery-main {
+    min-height: 300px;
+  }
+}
