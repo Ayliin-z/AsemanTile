@@ -1,0 +1,131 @@
+/* frontend/src/components/forms/PartnerRegisterForm.css */
+.partner-register-form {
+  background: white;
+  border-radius: 24px;
+  padding: 36px;
+  max-width: 650px;
+  margin: 0 auto;
+  border: 1px solid #e3dede;
+}
+
+.partner-register-form h2 {
+  text-align: center;
+  color: #13314c;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.partner-register-form .form-description {
+  text-align: center;
+  color: #7c8788;
+  font-size: 13px;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e3dede;
+}
+
+.form-section {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.form-section h4 {
+  color: #13314c;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ffd800;
+}
+
+.partner-register-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.partner-register-form .form-group {
+  margin-bottom: 18px;
+}
+
+.partner-register-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #13314c;
+  font-size: 14px;
+}
+
+.partner-register-form input,
+.partner-register-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e3dede;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Vazir', sans-serif;
+  transition: all 0.3s;
+}
+
+.partner-register-form input:focus,
+.partner-register-form textarea:focus {
+  outline: none;
+  border-color: #1c7385;
+  box-shadow: 0 0 0 3px rgba(28, 115, 133, 0.1);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-left: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #ffd800;
+  color: #13314c;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Vazir', sans-serif;
+  margin-top: 10px;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: #e1aa12;
+  transform: scale(1.02);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .partner-register-form {
+    padding: 24px;
+  }
+  
+  .partner-register-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
