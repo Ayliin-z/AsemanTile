@@ -1,0 +1,115 @@
+/* frontend/src/components/forms/LoginForm.css */
+.login-form {
+  background: white;
+  border-radius: 24px;
+  padding: 36px;
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #e3dede;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #13314c;
+  margin-bottom: 28px;
+  font-size: 28px;
+}
+
+.form-error {
+  background: #fee;
+  border-right: 3px solid #e74c3c;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  color: #c0392b;
+  font-size: 14px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #13314c;
+  font-size: 14px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e3dede;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Vazir', sans-serif;
+  transition: all 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #1c7385;
+  box-shadow: 0 0 0 3px rgba(28, 115, 133, 0.1);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-left: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-login {
+  width: 100%;
+  background: #1c7385;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Vazir', sans-serif;
+  margin-top: 10px;
+}
+
+.btn-login:hover:not(:disabled) {
+  background: #0f5a6b;
+}
+
+.btn-login:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e3dede;
+  font-size: 13px;
+}
+
+.form-footer a {
+  color: #1c7385;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
