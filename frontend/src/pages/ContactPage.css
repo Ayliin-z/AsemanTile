@@ -1,0 +1,139 @@
+.contact-page {
+  direction: rtl;
+  font-family: 'Vazir', sans-serif;
+  background: #f4f2f0;
+  padding: 50px 0;
+  min-height: 70vh;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== بخش بالایی (عکس + متن) – بدون تغییر ========== */
+.contact-hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-hero-image {
+  flex: 0 0 45%;
+  order: 1;
+}
+
+.contact-hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffd800;
+}
+
+.contact-hero-text {
+  flex: 1;
+}
+
+.contact-hero-text h1 {
+  font-size: 36px;
+  color: #13314c;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #ffd800;
+  display: inline-block;
+}
+
+.contact-intro {
+  font-size: 18px;
+  line-height: 2;
+  color: #1e2a36;
+  text-align: justify;
+}
+
+/* ========== کارت‌های اطلاعات تماس (۴ لوزی) ========== */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border: 2px solid #ffd800;
+  border-radius: 24px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* شکل لوزی ملایم (اختیاری) */
+  clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(255, 216, 0, 0.15);
+  border-color: #e1aa12;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  color: #13314c;
+  margin: 0 0 12px;
+  font-weight: bold;
+}
+
+.contact-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #2c3e4e;
+  margin: 0;
+}
+
+/* ========== ریسپانسیو ========== */
+@media (max-width: 1000px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-hero-image {
+    order: 0;
+    width: 100%;
+  }
+
+  .contact-hero-text h1 {
+    font-size: 28px;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-card {
+    clip-path: none; /* در موبایل لوزی نباشد تا متن کامل دیده شود */
+    border-radius: 20px;
+  }
+}
