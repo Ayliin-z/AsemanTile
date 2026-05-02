@@ -1,0 +1,194 @@
+/* frontend/src/components/layout/Header.css */
+
+/* ========== ریست کلی ========== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #e3dede;
+}
+
+/* ========== هدر اصلی ========== */
+.main-header {
+  direction: rtl;
+  font-family: 'Vazir', sans-serif;
+  padding: 25px 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ظرف نوار آبی – بدون padding افقی */
+.nav-content {
+  display: flex;
+  align-items: center;
+  background: #13314c;
+  border-radius: 60px;
+  padding: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  min-height: auto;
+}
+
+/* ========== لوگو – چسبیده به لبه راست ========== */
+.logo-area {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.logo-img {
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 216, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 0 4px rgba(19, 49, 76, 0.2);
+  transition: all 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+  box-shadow: 0 0 25px rgba(255, 216, 0, 0.5), 0 0 0 6px rgba(19, 49, 76, 0.3);
+  border-color: #ffd800;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #ffd800;
+  line-height: 1.2;
+  font-family: 'Vazir', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== منوی ناوبری – چسبیده به لبه چپ ========== */
+.navigation {
+  margin-right: auto;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #e3dede;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Vazir', sans-serif;
+  transition: color 0.2s;
+  padding: 8px 0;
+  position: relative;
+}
+
+.nav-menu li a:hover {
+  color: #ffd800;
+}
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #ffd800;
+  transition: width 0.3s;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+/* دکمه ورود / عضویت – با فاصله از لبه چپ */
+.login-item {
+  margin-right: 0;
+  padding-left: 20px;
+}
+
+.login-item .login-link {
+  background: #ffd800;
+  color: #13314c !important;
+  padding: 5px 16px !important;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(255, 216, 0, 0.2);
+}
+
+.login-item .login-link:hover {
+  background: #e1aa12;
+  transform: scale(1.02);
+}
+
+.login-item .login-link::after {
+  display: none;
+}
+
+/* ========== ریسپانسیو ========== */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 40px;
+  }
+
+  .logo-area {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .navigation {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .login-item {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text h1 {
+    font-size: 20px;
+  }
+
+  .logo-img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+  }
+
+  .login-item .login-link {
+    padding: 5px 14px !important;
+    font-size: 13px;
+  }
+}
