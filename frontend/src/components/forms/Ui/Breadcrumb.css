@@ -1,0 +1,44 @@
+/* frontend/src/components/ui/Breadcrumb.css */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: 13px;
+  direction: rtl;
+}
+
+.breadcrumb-home {
+  color: #1c7385;
+  text-decoration: none;
+}
+
+.breadcrumb-home:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7c8788;
+}
+
+.breadcrumb-item a {
+  color: #1c7385;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #13314c;
+  font-weight: 500;
+}
+
+.breadcrumb-separator {
+  color: #c0c8cc;
+}
